@@ -93,7 +93,6 @@ form input[type="submit"]:hover {
         <ul>
             <li><a href="/">Home</a></li>
             <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="weatherNews.html">Weather News</a></li>
         </ul>
     </nav>
 
@@ -115,25 +114,5 @@ form input[type="submit"]:hover {
         
         <br><input type="submit" value="Search"></br>
     </form>
-
-    {% if weather_data %}
-    <h2>Weather Data</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Attribute</th>
-                <th>Value</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for key, value in weather_data.items() %}
-            <tr>
-                <td>{{ key }}</td>
-                <td>{{ value }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    {% endif %}
 </body>
 </html>
